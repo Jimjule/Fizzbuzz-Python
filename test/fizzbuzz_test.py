@@ -3,7 +3,6 @@ import sys
 import os
 
 sys.path.insert(0,'/Users/James/Projects/Python_Playground/fizzbuzz_python/lib')
-print(sys.path)
 
 from fizzbuzz import Fizzbuzz as fb
 
