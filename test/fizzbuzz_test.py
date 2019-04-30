@@ -29,3 +29,13 @@ def test_multiple_of_five_is_buzz():
     if fb.go(50000000) == "Buzz":
         count += 1
     assert count == 3
+
+def test_multiple_of_fifteen_is_fizzbuzz():
+    count = 0
+    if fb.go(15) == "Fizzbuzz":
+        count += 1
+    if fb.go(45) == "Fizzbuzz":
+        count += 1
+    if fb.go(30000015) == "Fizzbuzz":
+        count += 1
+    assert count == 3

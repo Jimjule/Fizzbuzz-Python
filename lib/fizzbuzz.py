@@ -1,7 +1,10 @@
 class Fizzbuzz():
     def go(num):
-        if num % 3 == 0:
+        if num % 15 == 0:
+            return "Fizzbuzz"
+        elif num % 3 == 0:
             return "Fizz"
         elif num % 5 == 0:
             return "Buzz"
-        return num
+        else:
+            return num
