@@ -10,5 +10,12 @@ from fizzbuzz import Fizzbuzz as fb
 def test_one():
     assert fb.go(1) == 1
 
-def test_three_is_fizz():
-    assert fb.go(3) == "Fizz"
+def test_multiple_of_three_is_fizz():
+    count = 0
+    if fb.go(3) == "Fizz":
+        count += 1
+    if fb.go(6) == "Fizz":
+        count += 1
+    if fb.go(18000003) == "Fizz":
+        count += 1
+    assert count == 3
